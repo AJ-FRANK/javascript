@@ -5,8 +5,18 @@ body {background-image: url(media/p1.jpg);
     text-align: center;
 }
 div {
-    border: 0px solid orange;
+    border: 2px solid red;
     padding: 20px 20px;
-    margin: 200px 600px 200px 600px;
-   background-color : orange;
+   margin: 200px 600px 200px 600px;
+   background-color  : orange;
+}
+
+
+h1{
+    background-color: pink;
+    border: 2px solid purple;
+    margin: 200px 400px 200px 400px;
+
+
+
 }
