@@ -15,36 +15,41 @@ function ass2() {
     if (isNaN(age)) {
         alert('age cannot be  ' + age + 'please try again')
         ass2();
-    } else if (age >99) {
+    } else if (age > 99) {
         alert('you are very old')
-    } else if (age >69) {
+    } else if (age > 69) {
         alert('you have reached an old age')
-    } else if(age >49){
+    } else if (age > 49) {
         alert('wow, you are on your way to old age ')
-    }else if(age >29){
+    } else if (age > 29) {
         alert('you are on your mid adult/old age')
-    }else if(age>17){
+    } else if (age > 17) {
         alert('congratulations. you are an adult but dont get too excited about that')
-    }else if(age >10){
+    } else if (age > 10) {
         alert('you are still young')
-    }else if(age >0){
+    } else if (age > 0) {
         alert('you are still a child')
-    } else{
+    } else {
         ass2();
     }
 }
 
 
 
-// function age(){ 
-    // if(  age = prompt('Helo '+  ' what is your age?')){ 
-                // if(  isNaN(age)   ){ 
-                    // alert( age + ' is not a number. enter your age again') 
-                    // age(); 
+function eage() {
+    if (age = prompt('Hello ' + ' what is your age?')) {
+        if (isNaN(age)) {
+            alert(age + ' is not a number. enter your age again');
+            eage();
+        }else if(age >17){
+            alert('you are an adult')
+        }else if(age <17){
+            alert('you are not an adult')
+        }
+    }else{
+        eage();
+    }
+    }
 
-        // }else{ 
-            // age(); 
-        // }
-    // }
-// }
+     
 

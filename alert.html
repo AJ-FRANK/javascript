@@ -7,5 +7,64 @@
  </head>
  <body>
     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+
+
+    <script>
+
+
+function get_name(){
+    if(  name = prompt('what is your name?')){
+            get_age();
+        }else{
+            get_name();
+        }
+}
+
+       
+
+function get_age(){
+    if(  age = prompt('Helo '+ name + ' what is your age?')){
+                if(  isNaN(age)   ){
+                    alert('Hello '+ name + ' ' + age + ' is not a number. enter you age again');
+                    get_age();
+                }else{
+                    get_gender();
+                }   
+
+        }else{
+            get_age();
+        }
+}
+
+
+
+function get_gender(){
+    if(  gender = prompt('Hello '+ name + ' what is your Gender?')){
+            if(gender == 'male' || gender == 'female' ){
+            alert('Hello '+ name + ' you are a '+ gender + ' and you are '+age+' years old');
+            }else{
+                alert('A gender can not be '+ gender+ ' enter your Gender Again');
+                get_gender();
+            }
+        }else{
+            get_gender();
+        }
+}
+
+
+get_name(); 
+
+    </script>
+    
+</body>
+</html>
  </body>
  </html>
