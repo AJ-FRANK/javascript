@@ -10,30 +10,7 @@ function frank() {
 }
 
 
-function ass2() {
-    var age = prompt('enter your age');
-    if (isNaN(age)) {
-        alert('age cannot be  ' + age + 'please try again')
-        ass2();
-    } else if (age > 99) {
-        alert('you are very old')
-    } else if (age > 69) {
-        alert('you have reached an old age')
-    } else if (age > 49) {
-        alert('wow, you are on your way to old age ')
-    } else if (age > 29) {
-        alert('you are on your mid adult/old age')
-    } else if (age > 17) {
-        alert('congratulations. you are an adult but dont get too excited about that')
-    } else if (age > 10) {
-        alert('you are still young')
-    } else if (age > 0) {
-        alert('you are still a child')
-    } else {
-        ass2();
-    }
-}
-
+ 
 
 
 function eage() {
@@ -51,5 +28,33 @@ function eage() {
     }
     }
 
+    // 1. account balance
+    // 2. data bundle 
+    // 3. data balance 
+    // 4. renew current data plan 
+    // 5. main menu
+    
+    function user(){
+        var menu = prompt("hello, welcome to AJ FRANK comm, please enter option 1 to 4 for self service");
+        switch(user){
+            case '1':
+                alert("your AJ FRANK account balance is $5680.00, input 5 to go back to main menu");
+                break;
+            case '2':
+                buydata();
+                break;
+            case '3':
+                alert("your data balance is 9000GB. input 5 to go back to main menu");
+                break;
+            case '4':
+                alert("congratulations, you have renew your current data balance. ENJOY")
+            case "5":
+                user();
+            default:
+                alert("you have entered an invalid command, please try again later");
+        }
+        
+    }
+    
      
 
