@@ -35,7 +35,7 @@ function eage() {
 // 5. main menu
 
 function user() {
-    let menu = prompt("hello, welcome to AJ FRANK comm, please enter option 1 to 4 for self service");
+    let menu = prompt("hello, welcome to AJ FRANK comm, please please select from any of the options below for self service \n 1.ACCOUNT BALANCE \n 2.BUY DATA \n 3.DATA BALANCE \n 4.DATA BUNDLE RENEWAL \n 5.MAIN MENU");
     switch (menu) {
         case '1':
             alert("your AJ FRANK account balance is $5680.00, input 5 to go back to main menu");
